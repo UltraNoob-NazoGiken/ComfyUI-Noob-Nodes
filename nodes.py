@@ -8,6 +8,7 @@ from PIL import Image
 import torch
 import torchvision.transforms.functional as TF
 
+# v5 PathClenerを追加
 # v4 Sequential Directory Generator
 # v3 Mask Fill with Color
 
@@ -328,18 +329,52 @@ class SequentialDirectoryNode:
         
         return (output_path,)
 
+class PathCleaner:
+    """
+    Windowsの「パスをコピー」で得られるダブルクォーテーション付きパスをクリーンにする
+    """
+    
+    @classmethod
+    def INPUT_TYPES(s):
+        return {
+            "required": {
+                "path": ("STRING", {
+                    "default": "",
+                    "multiline": False,
+                }),
+            },
+        }
+
+    RETURN_TYPES = ("STRING",)
+    RETURN_NAMES = ("clean_path",)
+    FUNCTION = "clean_path"
+    CATEGORY = "utils"
+
+    def clean_path(self, path):
+        """
+        パスからダブルクォーテーションを除去する
+        """
+        # 前後のダブルクォーテーションを除去
+        clean = path.strip().strip('"').strip("'")
+        
+        print(f"入力パス: {path}")
+        print(f"クリーン後: {clean}")
+        
+        return (clean,)
     
 NODE_CLASS_MAPPINGS = {
     "TaggerMix": TaggerMix,
     "ListImagesNode": ListImagesNode,
     "MaskFillNode": MaskFillNode,
-    "SequentialDirectoryNode": SequentialDirectoryNode
+    "SequentialDirectoryNode": SequentialDirectoryNode,
+    "PathCleaner": PathCleaner,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
     "TaggerMix": "Tagger Extract and Mix",
     "ListImagesNode": "List Images from Directory",
     "MaskFillNode": "Mask Fill with Color",
-    "SequentialDirectoryNode": "Sequential Directory Generator"
+    "SequentialDirectoryNode": "Sequential Directory Generator",
+    "PathCleaner": "Path Cleaner",
 }
 

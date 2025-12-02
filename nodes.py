@@ -1,6 +1,5 @@
 import os
 from typing import List, Tuple
-import folder_paths
 from nodes import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
 import numpy as np
 from PIL import Image

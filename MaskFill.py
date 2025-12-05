@@ -9,7 +9,7 @@ class MaskFillNode:
                 "image": ("IMAGE",),
                 "mask": ("MASK",),
                 "hex_code": ("STRING", {
-                    "default": "#FF0000",
+                    "default": "#FFFFFF",
                     "ui": "color",
                 }),
                 "red": ("INT", {

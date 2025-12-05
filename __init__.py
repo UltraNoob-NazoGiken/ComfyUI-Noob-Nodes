@@ -1,12 +1,15 @@
 from .nodes import TaggerMix
 from .nodes import ListImagesNode
-from .nodes import MaskFillNode
 from .nodes import PathCleaner
 
 from .SequentialDirectory import SequentialDirectoryNode
 
+from .MaskFill import MaskFillNode
+
 from .fix_pose_keypoints import FixPoseKeypoints
 from .fix_pose_keypoints import DebugPose
+
+
 
 NODE_CLASS_MAPPINGS = {
     "TaggerMix": TaggerMix,

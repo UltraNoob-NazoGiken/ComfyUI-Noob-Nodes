@@ -9,7 +9,7 @@ from .MaskFill import MaskFillNode
 from .fix_pose_keypoints import FixPoseKeypoints
 from .fix_pose_keypoints import DebugPose
 
-
+from .zero_pad_node import ZeroPadNode
 
 NODE_CLASS_MAPPINGS = {
     "TaggerMix": TaggerMix,
@@ -19,6 +19,7 @@ NODE_CLASS_MAPPINGS = {
     "PathCleaner": PathCleaner,
     "FixPoseKeypoints": FixPoseKeypoints,
     "DebugPose": DebugPose,
+    "ZeroPadNode": ZeroPadNode,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -29,6 +30,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "PathCleaner": "Path Cleaner",
     "FixPoseKeypoints": "Fix Pose Keypoints (BODY25 Pad)",
     "DebugPose": "Debug PoseKeypoint",
+    "ZeroPadNode": "Zero Pad (INT → 0000)"
 }
 
 

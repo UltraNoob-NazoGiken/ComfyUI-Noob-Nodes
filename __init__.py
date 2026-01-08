@@ -13,6 +13,9 @@ from .zero_pad_node import ZeroPadNode
 
 from .create_folders_from_path import CreateFoldersFromPath
 
+from .square_bbox_from_mask import SquareBBoxFromMask
+
+
 NODE_CLASS_MAPPINGS = {
     "TaggerMix": TaggerMix,
     "ListImagesNode": ListImagesNode,
@@ -23,6 +26,7 @@ NODE_CLASS_MAPPINGS = {
     "DebugPose": DebugPose,
     "ZeroPadNode": ZeroPadNode,
     "CreateFoldersFromPath": CreateFoldersFromPath,
+    "SquareBBoxFromMask": SquareBBoxFromMask
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -34,7 +38,8 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "FixPoseKeypoints": "Fix Pose Keypoints (BODY25 Pad)",
     "DebugPose": "Debug PoseKeypoint",
     "ZeroPadNode": "Zero Pad (INT → 0000)",
-    "CreateFoldersFromPath": "Create Folders From Path"
+    "CreateFoldersFromPath": "Create Folders From Path",
+    "SquareBBoxFromMask": "Square BBox From Mask"
 }
 
 

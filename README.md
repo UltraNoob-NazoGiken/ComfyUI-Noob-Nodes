@@ -1,3 +1,11 @@
+# String To LoRA Name
+
+stringで指定したloraファイルを、LoRA Loaderの"lora_name"ソケットに差すノードです
+
+LoRAファイルなどをtomlなどの設定データから読み込むために使用します
+
+※便宜上どんなソケットにも挿さる使用なのでDiffusion Modelsなどリストから名称を選ぶタイプならあらゆるソケットで使用できるかもしれません
+
 # PathCleaner
 
 ダブルクォーテーションで囲まれているパスからそれらを除去したパスを生成します
@@ -19,6 +27,10 @@
 実際にクロップする場合は Crop (mtb) などに接続してください
 
 # update
+
+## 260/1/28
+
+String to LoRA Name追加
 
 ## 26/01/08
 

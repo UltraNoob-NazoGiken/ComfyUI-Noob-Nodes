@@ -6,14 +6,13 @@ from .SequentialDirectory import SequentialDirectoryNode
 
 from .MaskFill import MaskFillNode
 
-from .fix_pose_keypoints import FixPoseKeypoints
-from .fix_pose_keypoints import DebugPose
-
 from .zero_pad_node import ZeroPadNode
 
 from .create_folders_from_path import CreateFoldersFromPath
 
 from .square_bbox_from_mask import SquareBBoxFromMask
+
+from .string_lora_name import StringToLoraName
 
 
 NODE_CLASS_MAPPINGS = {
@@ -22,11 +21,10 @@ NODE_CLASS_MAPPINGS = {
     "MaskFillNode": MaskFillNode,
     "SequentialDirectoryNode": SequentialDirectoryNode,
     "PathCleaner": PathCleaner,
-    "FixPoseKeypoints": FixPoseKeypoints,
-    "DebugPose": DebugPose,
     "ZeroPadNode": ZeroPadNode,
     "CreateFoldersFromPath": CreateFoldersFromPath,
-    "SquareBBoxFromMask": SquareBBoxFromMask
+    "SquareBBoxFromMask": SquareBBoxFromMask,
+    "StringToLoraName": StringToLoraName,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -35,13 +33,10 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "MaskFillNode": "Mask Fill with Color",
     "SequentialDirectoryNode": "Sequential Directory Generator",
     "PathCleaner": "Path Cleaner",
-    "FixPoseKeypoints": "Fix Pose Keypoints (BODY25 Pad)",
-    "DebugPose": "Debug PoseKeypoint",
     "ZeroPadNode": "Zero Pad (INT → 0000)",
     "CreateFoldersFromPath": "Create Folders From Path",
-    "SquareBBoxFromMask": "Square BBox From Mask"
+    "SquareBBoxFromMask": "Square BBox From Mask",
+    "StringToLoraName": "String to LoRA Name",
 }
-
-
 
 __all__ = ['NODE_CLASS_MAPPINGS', 'NODE_DISPLAY_NAME_MAPPINGS']

@@ -26,7 +26,17 @@ LoRAファイルなどをtomlなどの設定データから読み込むために
 
 実際にクロップする場合は Crop (mtb) などに接続してください
 
+# Pixel Color Picker (HEX)
+
+x,y座標を指定し、画像から特定の1pxのカラーをHEXコードで返します
+
+RMBGのColor To Maskに接続する想定なためoutputはCOLORCODE型になっています
+
 # update
+
+## 26/02/03
+
+Pixel Color Picker (HEX) 追加
 
 ## 260/1/28
 

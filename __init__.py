@@ -14,6 +14,8 @@ from .square_bbox_from_mask import SquareBBoxFromMask
 
 from .string_lora_name import StringToLoraName
 
+from .pixel_color_picker import PixelColorPicker
+
 
 NODE_CLASS_MAPPINGS = {
     "TaggerMix": TaggerMix,
@@ -25,6 +27,7 @@ NODE_CLASS_MAPPINGS = {
     "CreateFoldersFromPath": CreateFoldersFromPath,
     "SquareBBoxFromMask": SquareBBoxFromMask,
     "StringToLoraName": StringToLoraName,
+    "PixelColorPicker": PixelColorPicker,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -37,6 +40,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "CreateFoldersFromPath": "Create Folders From Path",
     "SquareBBoxFromMask": "Square BBox From Mask",
     "StringToLoraName": "String to LoRA Name",
+    "PixelColorPicker": "Pixel Color Picker (HEX)",
 }
 
 __all__ = ['NODE_CLASS_MAPPINGS', 'NODE_DISPLAY_NAME_MAPPINGS']

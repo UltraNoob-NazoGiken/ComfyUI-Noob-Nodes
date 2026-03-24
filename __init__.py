@@ -16,6 +16,8 @@ from .string_lora_name import StringToLoraName
 
 from .pixel_color_picker import PixelColorPicker
 
+from .model_path_resolver import ModelPathResolver
+
 
 NODE_CLASS_MAPPINGS = {
     "TaggerMix": TaggerMix,
@@ -28,6 +30,7 @@ NODE_CLASS_MAPPINGS = {
     "SquareBBoxFromMask": SquareBBoxFromMask,
     "StringToLoraName": StringToLoraName,
     "PixelColorPicker": PixelColorPicker,
+    "ModelPathResolver": ModelPathResolver,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -41,6 +44,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "SquareBBoxFromMask": "Square BBox From Mask",
     "StringToLoraName": "String to LoRA Name",
     "PixelColorPicker": "Pixel Color Picker (HEX)",
+    "ModelPathResolver": "Model Path Resolver",
 }
 
 __all__ = ['NODE_CLASS_MAPPINGS', 'NODE_DISPLAY_NAME_MAPPINGS']

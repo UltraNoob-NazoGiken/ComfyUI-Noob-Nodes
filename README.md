@@ -20,7 +20,7 @@ stringで指定したloraファイルを、LoRA Loaderの"lora_name"ソケット
 
 LoRAファイルなどをtomlなどの設定データから読み込むために使用します
 
-※便宜上どんなソケットにも挿さる使用なのでDiffusion Modelsなどリストから名称を選ぶタイプならあらゆるソケットで使用できるかもしれません
+※便宜上どんなソケットにも挿さる仕様なのでDiffusion Modelsなどリストから名称を選ぶタイプならあらゆるソケットで使用できます
 
 # PathCleaner
 

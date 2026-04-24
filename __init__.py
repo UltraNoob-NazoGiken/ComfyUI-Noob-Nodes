@@ -18,6 +18,8 @@ from .pixel_color_picker import PixelColorPicker
 
 from .model_path_resolver import ModelPathResolver
 
+from .multi_split_node import MultiStringSplitter
+
 
 NODE_CLASS_MAPPINGS = {
     "TaggerMix": TaggerMix,
@@ -31,6 +33,7 @@ NODE_CLASS_MAPPINGS = {
     "StringToLoraName": StringToLoraName,
     "PixelColorPicker": PixelColorPicker,
     "ModelPathResolver": ModelPathResolver,
+    "MultiStringSplitter": MultiStringSplitter,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -45,6 +48,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "StringToLoraName": "String to LoRA Name",
     "PixelColorPicker": "Pixel Color Picker (HEX)",
     "ModelPathResolver": "Model Path Resolver",
+    "MultiStringSplitter": "Multi-String Splitter (Max 6)",
 }
 
 __all__ = ['NODE_CLASS_MAPPINGS', 'NODE_DISPLAY_NAME_MAPPINGS']

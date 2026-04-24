@@ -1,3 +1,18 @@
+# Seedance 2.0 (Official API) - Noob Nodes
+
+開発中
+
+ByteDance公式API経由でseedanceを使うもの
+
+※ComfyUI公式を利用するとComfy-Org経由の課金となるがByteDanceに直接課金してAPI生成するためのノード
+
+# Multi-String Splitter (Max 6)
+
+ひとつなぎの文字列を特定の文字で分割して最大6つのピン二出力します
+
+例：aaa-bbb-ccc を "-" で分割
+aaa, bbb, cccがそれぞれ上から3つのピンで分割されてアウトプットされる
+
 # Model Path Resolver
 
 ![](img/2026-03-24-14-22-47.png)

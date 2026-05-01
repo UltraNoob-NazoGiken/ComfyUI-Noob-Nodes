@@ -1,3 +1,19 @@
+# Anywhere LoRA Loader, Anywhere Model Loader
+
+Model Path ResolverにLoRAローダー, Diffusion Modelローダー自体も組み込んだもの
+
+必ずモデル名はテキストで指定する(combo boxは使用不可)
+
+※コンボボックスの選択式にしてしまうと、そもそも存在しないloraがセットされたときにComfyUI側の機能で停止してしまう
+
+## Anywhere Diffusion Model Names
+
+上記モデル名はstringとなるのでCombo boxから選択する場合はこのノードを使用する
+
+loraの場合はeasy-useのLora Namesを使用
+
+※残念ながらこのノードを使っても別環境へ移動したときにloraが存在しないとエラーで止まってしまうので、基本はテキスト指定する
+
 # Seedance 2.0 (Official API) - Noob Nodes
 
 開発中

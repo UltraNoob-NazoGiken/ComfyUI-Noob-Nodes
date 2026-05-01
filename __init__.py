@@ -17,6 +17,10 @@ from .multi_split_node import MultiStringSplitter
 from .seedance_byteplus import SeedanceBytePlusNode
 from .simple_text_display import SimpleTextDisplay
 from .remap_value_range import RemapValueRange
+from .anywhere_lora_loader import AnywhereLoraLoader
+from .anywhere_model_loader import AnywhereModelLoader
+from .anywhere_model_loader import AnywhereModelNameSelector
+
 
 
 NODE_CLASS_MAPPINGS = {
@@ -35,6 +39,9 @@ NODE_CLASS_MAPPINGS = {
     "SeedanceBytePlusNode": SeedanceBytePlusNode,
     "SimpleTextDisplay": SimpleTextDisplay,
     "RemapValueRange": RemapValueRange,
+    "AnywhereLoraLoader": AnywhereLoraLoader,
+    "AnywhereModelLoader": AnywhereModelLoader,
+    "AnywhereModelNameSelector": AnywhereModelNameSelector
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -52,7 +59,10 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "MultiStringSplitter": "Multi-String Splitter (Max 6)",
     "SeedanceBytePlusNode": "Seedance 2.0 (Official API) - Noob Nodes",
     "SimpleTextDisplay": "Simple Text Display (Nodes 2.0)",
-    "RemapValueRange": "Remap Value Range"
+    "RemapValueRange": "Remap Value Range",
+    "AnywhereLoraLoader": "🔍 Anywhere LoRA Loader",
+    "AnywhereModelLoader": "🔍 Anywhere Model Loader",
+    "AnywhereModelNameSelector": "Anywhere Diffusion Model Names"
 
 }
 

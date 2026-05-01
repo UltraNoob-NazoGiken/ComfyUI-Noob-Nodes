@@ -2,6 +2,9 @@ from .nodes import TaggerMix
 from .nodes import ListImagesNode
 from .nodes import PathCleaner
 
+# webフォルダをComfyUIに認識させるための宣言
+WEB_DIRECTORY = "./web"
+
 from .SequentialDirectory import SequentialDirectoryNode
 from .MaskFill import MaskFillNode
 from .zero_pad_node import ZeroPadNode
@@ -12,6 +15,8 @@ from .pixel_color_picker import PixelColorPicker
 from .model_path_resolver import ModelPathResolver
 from .multi_split_node import MultiStringSplitter
 from .seedance_byteplus import SeedanceBytePlusNode
+from .simple_text_display import SimpleTextDisplay
+from .remap_value_range import RemapValueRange
 
 
 NODE_CLASS_MAPPINGS = {
@@ -28,6 +33,8 @@ NODE_CLASS_MAPPINGS = {
     "ModelPathResolver": ModelPathResolver,
     "MultiStringSplitter": MultiStringSplitter,
     "SeedanceBytePlusNode": SeedanceBytePlusNode,
+    "SimpleTextDisplay": SimpleTextDisplay,
+    "RemapValueRange": RemapValueRange,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -44,6 +51,9 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "ModelPathResolver": "Model Path Resolver",
     "MultiStringSplitter": "Multi-String Splitter (Max 6)",
     "SeedanceBytePlusNode": "Seedance 2.0 (Official API) - Noob Nodes",
+    "SimpleTextDisplay": "Simple Text Display (Nodes 2.0)",
+    "RemapValueRange": "Remap Value Range"
+
 }
 
-__all__ = ['NODE_CLASS_MAPPINGS', 'NODE_DISPLAY_NAME_MAPPINGS']
+__all__ = ['NODE_CLASS_MAPPINGS', 'NODE_DISPLAY_NAME_MAPPINGS', 'WEB_DIRECTORY']

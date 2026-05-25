@@ -20,7 +20,7 @@ from .remap_value_range import RemapValueRange
 from .anywhere_lora_loader import AnywhereLoraLoader
 from .anywhere_model_loader import AnywhereModelLoader
 from .anywhere_model_loader import AnywhereModelNameSelector
-
+from .mono_to_stereo import MonoToStereo
 
 
 NODE_CLASS_MAPPINGS = {
@@ -41,7 +41,8 @@ NODE_CLASS_MAPPINGS = {
     "RemapValueRange": RemapValueRange,
     "AnywhereLoraLoader": AnywhereLoraLoader,
     "AnywhereModelLoader": AnywhereModelLoader,
-    "AnywhereModelNameSelector": AnywhereModelNameSelector
+    "AnywhereModelNameSelector": AnywhereModelNameSelector,
+    "MonoToStereo": MonoToStereo
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -62,7 +63,8 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "RemapValueRange": "Remap Value Range",
     "AnywhereLoraLoader": "🔍 Anywhere LoRA Loader",
     "AnywhereModelLoader": "🔍 Anywhere Model Loader",
-    "AnywhereModelNameSelector": "Anywhere Diffusion Model Names"
+    "AnywhereModelNameSelector": "Anywhere Diffusion Model Names",
+    "MonoToStereo": "Mono to Stereo Audio"
 
 }
 

@@ -21,6 +21,7 @@ from .anywhere_lora_loader import AnywhereLoraLoader
 from .anywhere_model_loader import AnywhereModelLoader
 from .anywhere_model_loader import AnywhereModelNameSelector
 from .mono_to_stereo import MonoToStereo
+from .image_cache_node import ImageCacheNode
 
 
 NODE_CLASS_MAPPINGS = {
@@ -42,7 +43,8 @@ NODE_CLASS_MAPPINGS = {
     "AnywhereLoraLoader": AnywhereLoraLoader,
     "AnywhereModelLoader": AnywhereModelLoader,
     "AnywhereModelNameSelector": AnywhereModelNameSelector,
-    "MonoToStereo": MonoToStereo
+    "MonoToStereo": MonoToStereo,
+    "ImageCacheNode": ImageCacheNode,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -64,7 +66,8 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "AnywhereLoraLoader": "🔍 Anywhere LoRA Loader",
     "AnywhereModelLoader": "🔍 Anywhere Model Loader",
     "AnywhereModelNameSelector": "Anywhere Diffusion Model Names",
-    "MonoToStereo": "Mono to Stereo Audio"
+    "MonoToStereo": "Mono to Stereo Audio",
+    "ImageCacheNode": "🔄 Image Cache - Noob Nodes"
 
 }
 

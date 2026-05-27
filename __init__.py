@@ -22,6 +22,7 @@ from .anywhere_model_loader import AnywhereModelLoader
 from .anywhere_model_loader import AnywhereModelNameSelector
 from .mono_to_stereo import MonoToStereo
 from .image_cache_node import ImageCacheNode
+from .counter_node import ComfyUICounterWithReset
 
 
 NODE_CLASS_MAPPINGS = {
@@ -45,30 +46,30 @@ NODE_CLASS_MAPPINGS = {
     "AnywhereModelNameSelector": AnywhereModelNameSelector,
     "MonoToStereo": MonoToStereo,
     "ImageCacheNode": ImageCacheNode,
+    "ComfyUICounterWithReset": ComfyUICounterWithReset,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
     "TaggerMix": "Tagger Extract and Mix",
-    "ListImagesNode": "List Images from Directory",
-    "MaskFillNode": "Mask Fill with Color",
-    "SequentialDirectoryNode": "Sequential Directory Generator",
-    "PathCleaner": "Path Cleaner",
-    "ZeroPadNode": "Zero Pad (INT → 0000)",
-    "CreateFoldersFromPath": "Create Folders From Path",
-    "SquareBBoxFromMask": "Square BBox From Mask",
-    "StringToLoraName": "String to LoRA Name",
-    "PixelColorPicker": "Pixel Color Picker (HEX)",
-    "ModelPathResolver": "Model Path Resolver",
-    "MultiStringSplitter": "Multi-String Splitter (Max 6)",
+    "ListImagesNode": "List Images from Directory - Noob Nodes",
+    "MaskFillNode": "Mask Fill with Color - Noob Nodes",
+    "SequentialDirectoryNode": "Sequential Directory Generator - Noob Nodes",
+    "PathCleaner": "Path Cleaner - Noob Nodes",
+    "ZeroPadNode": "Zero Pad (INT → 0000) - Noob Nodes",
+    "CreateFoldersFromPath": "Create Folders From Path - Noob Nodes",
+    "SquareBBoxFromMask": "Square BBox From Mask - Noob Nodes",
+    "StringToLoraName": "String to LoRA Name - Noob Nodes",
+    "PixelColorPicker": "Pixel Color Picker (HEX) - Noob Nodes",
+    "ModelPathResolver": "Model Path Resolver - Noob Nodes",
+    "MultiStringSplitter": "Multi-String Splitter (Max 6) - Noob Nodes",
     "SeedanceBytePlusNode": "Seedance 2.0 (Official API) - Noob Nodes",
-    "SimpleTextDisplay": "Simple Text Display (Nodes 2.0)",
-    "RemapValueRange": "Remap Value Range",
-    "AnywhereLoraLoader": "🔍 Anywhere LoRA Loader",
-    "AnywhereModelLoader": "🔍 Anywhere Model Loader",
-    "AnywhereModelNameSelector": "Anywhere Diffusion Model Names",
-    "MonoToStereo": "Mono to Stereo Audio",
-    "ImageCacheNode": "🔄 Image Cache - Noob Nodes"
+    "SimpleTextDisplay": "Simple Text Display (Nodes 2.0) - Noob Nodes",
+    "RemapValueRange": "Remap Value Range - Noob Nodes",
+    "AnywhereLoraLoader": "🔍 Anywhere LoRA Loader - Noob Nodes",
+    "AnywhereModelLoader": "🔍 Anywhere Model Loader - Noob Nodes",
+    "AnywhereModelNameSelector": "Anywhere Diffusion Model Names - Noob Nodes",
+    "MonoToStereo": "Mono to Stereo Audio - Noob Nodes",
+    "ImageCacheNode": "🔄 Image Cache - Noob Nodes",
+    "ComfyUICounterWithReset": "Counter Widget w/ Reset Switch - Noob Nodes"
 
 }
-
-__all__ = ['NODE_CLASS_MAPPINGS', 'NODE_DISPLAY_NAME_MAPPINGS', 'WEB_DIRECTORY']

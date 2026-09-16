@@ -23,7 +23,7 @@ from .anywhere_model_loader import AnywhereModelNameSelector
 from .mono_to_stereo import MonoToStereo
 from .image_cache_node import ImageCacheNode
 from .counter_node import ComfyUICounterWithReset
-
+from .load_previous_frame_from_path import LoadPreviousFrame
 
 NODE_CLASS_MAPPINGS = {
     "TaggerMix": TaggerMix,
@@ -47,6 +47,7 @@ NODE_CLASS_MAPPINGS = {
     "MonoToStereo": MonoToStereo,
     "ImageCacheNode": ImageCacheNode,
     "ComfyUICounterWithReset": ComfyUICounterWithReset,
+    "LoadPreviousFrame": LoadPreviousFrame,
 }
 
 NODE_DISPLAY_NAME_MAPPINGS = {
@@ -70,6 +71,7 @@ NODE_DISPLAY_NAME_MAPPINGS = {
     "AnywhereModelNameSelector": "Anywhere Diffusion Model Names - Noob Nodes",
     "MonoToStereo": "Mono to Stereo Audio - Noob Nodes",
     "ImageCacheNode": "🔄 Image Cache - Noob Nodes",
-    "ComfyUICounterWithReset": "Counter Widget w/ Reset Switch - Noob Nodes"
+    "ComfyUICounterWithReset": "Counter Widget w/ Reset Switch - Noob Nodes",
+    "LoadPreviousFrame": "Load Previous Frame from Path - Noob Nodes"
 
 }
